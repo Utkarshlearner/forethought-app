@@ -11,7 +11,7 @@ WORKDIR /usr/src/app
 # RUN npm install
 
 # Copy the rest of the application code to the working directory
-COPY  index.js
+COPY  index.js .
 
 # Expose the port the app runs on
 EXPOSE 3000
