@@ -42,6 +42,7 @@ app.post("/removetask", function(req, res) {
 // });
 
 app.get('/', (req, res) => {
+  console.log('Hello')
   res.send('Hello world from a Node.js app!')
 })
 
