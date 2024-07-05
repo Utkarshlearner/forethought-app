@@ -37,9 +37,13 @@ app.post("/removetask", function(req, res) {
 });
 
 // get website files
-app.get("/", function (req, res) {
-  res.render("index", { task: task, complete: complete });
-});
+// app.get("/", function (req, res) {
+//   res.render("index", { task: task, complete: complete });
+// });
+
+app.get('/', (req, res) => {
+  res.send('Hello world from a Node.js app!')
+})
 
 // listen for connections
 app.listen(8080, function() {
